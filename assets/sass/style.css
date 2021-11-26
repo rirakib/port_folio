@@ -3,9 +3,9 @@
   --body-font: 'Mulish', sans-serif;
   --title-font: 'Mulish';
   --para-font: sans-serif;
-  --title-size: 24px;
+  --title-size: 32px;
   --sub-title: 21px;
-  --para-size:16px;
+  --para-size:18px;
   --primary-color-light: #F2F3D9;
   --primary-color-dark: #030027;
   --title-color-light: #F2F3D9;
@@ -19,6 +19,12 @@
   --background-color-tarsiary: #C16E70;
   --background-color-light-tarsiary: #DC9E82;
   --transition: 0.4s all ease-in-out;
+}
+
+@media screen and (max-width: 786px) {
+  #home .home_img {
+    margin-top: 80px;
+  }
 }
 
 .nav_bar {
@@ -116,67 +122,57 @@
 }
 
 #home {
-  position: relative;
   height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(100%, rgba(1, 0, 21, 0.356478)), color-stop(100%, rgba(0, 0, 0, 0.376085)), to(#00d4ff)), url("../img/bg_img.jpeg");
-  background-image: linear-gradient(90deg, #020024 0%, rgba(1, 0, 21, 0.356478) 100%, rgba(0, 0, 0, 0.376085) 100%, #00d4ff 100%), url("../img/bg_img.jpeg");
-  background-position: center center;
-  color: var(--font-color-light);
+  position: relative;
+  background-attachment: fixed;
 }
 
-#home h1 {
-  font-size: 75px;
-  font-family: var(--title-font);
-}
-
-#home .home_service {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 20px;
-}
-
-#home .home_service .service {
-  background-color: var(--background-color-tarsiary);
-  padding: 5px 10px;
-  border-radius: 8px;
-}
-
-#home .home_service .service h3 {
-  font-size: 15px;
-}
-
-#home .home_bottom {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  padding: 0 20px;
-}
-
-#home .home_bottom a {
-  text-decoration: none;
-  color: var(----mixed-color);
-  margin: 0 5px;
+#home p {
   font-size: var(--para-size);
+}
+
+#home img {
+  max-width: 400px;
+}
+
+#home .home_btn a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--font-color-light);
+  background-color: var(--background-color-tarsiary);
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+#home .socail_icon {
+  position: absolute;
+  right: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-right: -20px;
+}
+
+#home .socail_icon a {
+  text-decoration: none;
+  margin-left: 8px;
+  color: var(--mixed-color);
+  font-weight: 600;
+}
+
+#about h1 {
+  font-size: var(--title-size);
+  color: var(--mixed-color);
+  text-align: center;
+}
+
+body {
+  background-color: var(--background-color-light);
 }
 /*# sourceMappingURL=style.css.map */
