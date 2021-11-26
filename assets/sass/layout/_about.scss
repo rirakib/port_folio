@@ -1,3 +1,19 @@
-#about h1{
+#about {
+    h1{
     @include title;
+    }
+    img{
+        max-width:400px;
+    }
+    p{
+        text-align:justify;
+    }
+    .about_btn{
+        a{
+            @include custom_btn;
+            &:hover{
+                @include button_hover;
+            }
+        }
+    }
 }

@@ -21,8 +21,16 @@
   --transition: 0.4s all ease-in-out;
 }
 
+.section_part {
+  margin-top: 80px;
+}
+
+.container {
+  margin-top: 40px;
+}
+
 @media screen and (max-width: 786px) {
-  #home .home_img {
+  .grid {
     margin-top: 80px;
   }
 }
@@ -151,6 +159,15 @@
   border-radius: 5px;
 }
 
+#home .home_btn a:hover {
+  background-color: transparent;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  border: 3px solid var(--mixed-color);
+  color: var(--mixed-color);
+  font-weight: 600;
+}
+
 #home .socail_icon {
   position: absolute;
   right: 0;
@@ -167,6 +184,38 @@
 }
 
 #about h1 {
+  font-size: var(--title-size);
+  color: var(--mixed-color);
+  text-align: center;
+}
+
+#about img {
+  max-width: 400px;
+}
+
+#about p {
+  text-align: justify;
+}
+
+#about .about_btn a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--font-color-light);
+  background-color: var(--background-color-tarsiary);
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+#about .about_btn a:hover {
+  background-color: transparent;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  border: 3px solid var(--mixed-color);
+  color: var(--mixed-color);
+  font-weight: 600;
+}
+
+#skill h1 {
   font-size: var(--title-size);
   color: var(--mixed-color);
   text-align: center;

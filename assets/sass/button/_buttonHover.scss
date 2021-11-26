@@ -1,0 +1,7 @@
+@mixin button_hover{
+    background-color:transparent;
+    transition: var(--transition);
+    border:3px solid var(--mixed-color);
+    color: var(--mixed-color);
+    font-weight:600;
+}

@@ -16,8 +16,10 @@
 
     .home_btn {
         a {
-
             @include custom_btn;
+            &:hover{
+                @include button_hover;
+            }
         }
     }
     .socail_icon{
