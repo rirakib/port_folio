@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    // FONT VARIABLE HERE 
+    --body-font: 'Mulish', sans-serif;
+    --title-font: 'Mulish';
+    --para-font: sans-serif;
+
+
+    //FONT SIZE HERE 
+    --title-size: 24px;
+    --sub-title: 21px;
+    --para-size:16px;
+
+    //COLOR VARIABLE
+    --primary-color-light: #F2F3D9;
+    --primary-color-dark: #030027;
+
+    --title-color-light: #F2F3D9;
+    --title-color-dark: #030027;
+
+    --font-color-light: #F2F3D9;
+    --font-color-dark: #030027;
+
+    --mixed-color: #DC9E82;
+
+    //Button Color
+    --button-background-color: #C16E70;
+    --button-hover-color: #DC9E82;
+
+    --background-color-light: #F2F3D9;
+    --background-color-tarsiary: #C16E70;
+    --background-color-light-tarsiary: #DC9E82;
+
+    //transition
+
+    --transition : 0.4s all ease-in-out;
+
+}
